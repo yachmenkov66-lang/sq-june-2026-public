@@ -88,9 +88,9 @@
   <div class="kpi red" title="Уникальные = разные люди, посетившие клуб ≥1 раз за месяц. Без ПТ (приходящего тренера)."><div class="kpi-label">Уникальных клиентов</div><div class="kpi-value">360</div><div class="kpi-yoy"><span class="neg">▼ 10.4% YoY</span> · <span class="neu">≥1 визит, без ПТ</span></div></div>
   <div class="kpi" title="Постоянные (ядро клуба) = клиенты с 4+ визитами за месяц. Без ПТ."><div class="kpi-label">Постоянные (4+ визита)</div><div class="kpi-value">103</div><div class="kpi-yoy"><span class="neu">ядро клуба · 28.6% от уникальных</span></div></div>
   <div class="kpi red"><div class="kpi-label">Новых клиентов</div><div class="kpi-value">61</div><div class="kpi-yoy"><span class="neg">▼ 53.4% YoY</span></div></div>
-  <div class="kpi red"><div class="kpi-label">Загрузка кортов</div><div class="kpi-value">42.3%</div><div class="kpi-yoy"><span class="neg">▼ 7.3 п.п. YoY</span> · <span class="neu">будни 44.8% / вых 35.3%</span></div></div>
+  <div class="kpi red"><div class="kpi-label">Загрузка кортов</div><div class="kpi-value">37.6%</div><div class="kpi-yoy"><span class="neg">▼ 4.6 п.п. YoY</span> · <span class="neu">будни 39.1% / вых 33.6%</span></div></div>
   
-  <div class="kpi"><div class="kpi-label">Забронировано часов</div><div class="kpi-value">1,218 ч</div><div class="kpi-yoy"><span class="neu">из 2,880 · свободно 1,662</span></div></div>
+  <div class="kpi"><div class="kpi-label">Забронировано часов</div><div class="kpi-value">1,083 ч</div><div class="kpi-yoy"><span class="neu">из 2,880 · свободно 1,797</span></div></div>
   <div class="kpi green"><div class="kpi-label">Не пришли (no-show)</div><div class="kpi-value">3</div><div class="kpi-yoy"><span class="neu">из 1,555 записей · 0.2%</span></div></div>
   <div class="kpi red"><div class="kpi-label">Отмены &lt; 4 часов</div><div class="kpi-value">92</div><div class="kpi-yoy"><span class="neg">22.5% от всех отмен</span></div></div>
 </div>
@@ -155,7 +155,7 @@
 <div class="insights">
   <h2>Ключевые выводы</h2>
   <div class="insight-list">
-    <div class="insight orange"><strong>Загрузка 42.3%</strong> · 1,218 из 2,880 ч · ▼ 7.3 п.п. к июню 2025. Пик 227 визитов/час.</div>
+    <div class="insight orange"><strong>Загрузка 37.6%</strong> · 1,083 из 2,880 ч · ▼ 4.6 п.п. к июню 2025. Пик 227 визитов/час.</div>
     <div class="insight orange"><strong>Визиты 1,141</strong> — ▼ 3.4% YoY. Среднее по дню: 38.0.</div>
     <div class="insight red"><strong>61 новых клиентов</strong> — ▼ 53.4% YoY (из 360 уникальных).</div>
     <div class="insight red"><strong>92 отмен менее чем за 4 часа</strong> — 22.5% от всех отмен. Корт стоит пустым.</div>
@@ -183,7 +183,7 @@ const barColors = labels.map((_, i) => i === 14 ? 'rgba(245,158,11,0.95)' : 'rgb
 
 new Chart(document.getElementById('utilChart'), {
   type: 'line',
-  data: { labels, datasets: [{ label: 'Загрузка %', data: [47.9, 47.3, 49.6, 40.7, 42.5, 46.4, 48.4, 56.9, 47.3, 48.2, 57.4, 57.3, 54.3, 50.6, 42.3],
+  data: { labels, datasets: [{ label: 'Загрузка %', data: [45.2, 45.4, 42.2, 39.1, 38.5, 42.9, 45.8, 52.5, 43.9, 38.7, 46.4, 49.5, 47.4, 41.1, 37.6],
     borderColor: 'rgba(56,189,248,1)', backgroundColor: 'rgba(56,189,248,0.1)', fill: true, tension: 0.4,
     pointBackgroundColor: labels.map((_, i) => i === 14 ? 'rgba(245,158,11,1)' : 'rgba(56,189,248,1)'),
     pointRadius: labels.map((_, i) => i === 14 ? 9 : 4) }]},
